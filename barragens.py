@@ -47,8 +47,3 @@ def estabilidade_tombamento(empuxo, peso, tipo_barragem, peso_especifico_barrage
     else:
         print(f'Momento atuante ({momento_empuxo * coeficiente_seguranca:.2f} tf.m) > Momento resistente ({momento_peso:.2f} tf.m)')
         print('A barragem nao esta segura quanto ao tombamento')
-        
-    
-empuxo, peso = estabilidade_deslizamento('retangular', 2.5, 1.0, 3.0, 6.0, 0.7, 2.5, 5.0, 1.2)
-
-estabilidade_tombamento(empuxo, peso, 'retangular', 2.5, 1.0, 3.0, 6.0, 0.7, 2.5, 5.0, 1.2)
